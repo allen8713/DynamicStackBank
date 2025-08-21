@@ -13,22 +13,21 @@
 
 ## 專案結構
 
+```text
 DynamicStackBank/
-│
 ├── include/
-│ ├── Stack.h # 動態模板堆疊類別定義
-│ ├── account.h # 帳號類別定義
-│ └── bank.h # 銀行類別定義
-│
+│   ├── Stack.h          # 動態模板堆疊類別定義
+│   ├── account.h        # 帳號類別定義
+│   └── bank.h           # 銀行類別定義
 ├── src/
-│ ├── driver.cpp # 測試堆疊功能
-│ ├── main.cpp # 執行銀行系統
-│ ├── account.cpp # 帳號類別實作
-│ └── bank.cpp # 銀行類別實作
-│
-├── Makefile # 編譯專案
-├── accounts.txt # 範例帳號資料
-└── transactions.txt # 範例交易資料
+│   ├── driver.cpp       # 測試堆疊功能
+│   ├── main.cpp         # 執行銀行系統
+│   ├── account.cpp      # 帳號類別實作
+│   └── bank.cpp         # 銀行類別實作
+├── Makefile             # 編譯專案
+├── accounts.txt         # 範例帳號資料
+└── transactions.txt     # 範例交易資料
+```
 
 
 ---
@@ -67,13 +66,17 @@ DynamicStackBank/
 
 ## 輸入輸出範例
 
-#account.txt
+範例輸入檔案
+account.txt
+```text
 1111111111 Alice 5000.0
 2222222222 Bob 3000.0
 3333333333 Charlie 7000.0
 4444444444 Diana 2500.0
 5555555555 Edward 10000.0
-
+```
+transactions.txt
+```text
 #transactions.txt
 1111111111 D 1000.0
 2222222222 W 500.0
@@ -81,13 +84,16 @@ DynamicStackBank/
 4444444444 D 750.0
 5555555555 W 2000.0
 6666666666 D 1000.0
-
+```
 
 D 表示存款（Deposit）
+
 W 表示提款（Withdrawal）
+
 第 6 筆交易的帳號 6666666666 不存在，會顯示錯誤訊息
 
-輸出範例:
+範例程式輸出
+```text
 ===== Account Listing =====
 Account Number: 1111111111
 Name: Alice
@@ -139,3 +145,4 @@ Account Number: 5555555555
 Name: Edward
 Balance: $8000.00
 --------------------------
+```

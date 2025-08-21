@@ -60,13 +60,17 @@ DynamicStackBank/
 使用 Makefile：
 
 進行編譯 make
+
 測試Stack ./a.out
+
 執行銀行系統 ./b.out
+
 
 
 ## 輸入輸出範例
 
 範例輸入檔案
+
 account.txt
 ```text
 1111111111 Alice 5000.0
@@ -91,6 +95,7 @@ D 表示存款（Deposit）
 W 表示提款（Withdrawal）
 
 第 6 筆交易的帳號 6666666666 不存在，會顯示錯誤訊息
+
 
 範例程式輸出
 ```text
